@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tessa Cowley</title>
+	<link rel="icon" href="black logo.png">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+  </head>
+
+<body>
+<div id="Welcome">
+	<img src="possible new welcome page6.jpg">
+</div>
+<div  id="header">
+	<ul>
+		<li>
+			
+       <a href="Shopping.html"> 
+      <img src="Shopping Cart Icon1.png" style="width: 30px; max-width: 100%; padding-top: 3.5%;"></a>
+      <a href="Contactme.html"> 
+      <img src="Contact me Icon1.png" style="width: 30px; max-width: 100%; padding-top: 3.5%;"></a>
+		</li>
+    <li>
+      
+    </li>
+    <li>
+      <p>  </p>
+    </li>
+    <li>
+      <p>  </p>
+    </li>
+      <li>
+      <p>  </p>
+    </li>
+      <li>
+      <p>  </p>
+    </li>
+		<li>
+			<a href="./Resume(2).pdf" target="_blank"> Resumé</a>
+		</li>
+		<li>
+			<a href="Portfolio.html"> Portfolio</a>
+		</li>
+		<li>
+			<a href="Aboutpage.html"> About Me </a>
+		</li>
+		<li>
+			<a href="index.html"> <img src="Homeicon2.png" style="width: 30px; max-width: 100%; padding-top: 1%;"> </a>
+			<img src="Home icon.psd" id="homeicon">
+		</li>
+	</ul>
+</div>
+
+<div id="slideshow">
+  	<div class="slideshow-container">
+	  	<div class="mySlides container" >
+		    <div class="numbertext">1 / 3</div>
+	      	<img src="Slideshow welcome page.png" alt="Avatar" class="image" style="width:100%">
+		</div>
+  	</div>
+
+  <div class="slideshow-container">
+  	<div class="mySlides container">
+    	<div class="numbertext">2 / 3</div>
+    	<img class="image" src="aboutmeslideshow.png" style="width:100%">
+    	<div class="overlay">
+	   		<div class="text1">
+          <a href="Aboutpage.html"> About Me </a>
+        </div>
+		</div>
+  	</div>
+  </div>
+
+  <div class="slideshow-container">
+  	<div class="mySlides container">
+    	<div class="numbertext">3 / 3</div>
+    	<img src="Resumehalf2.png" class="image" style="width:100%">
+  		<div class="overlay">
+	   		<div class="text1">
+	   			<a href="./Resume(2).pdf" target="_blank"> Resumé</a>
+	   		</div>
+		</div>
+  	</div>
+  </div>
+
+ <div id="forwardbackwardbutton">
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+<br>
+
+<div id="dots" style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script type="text/javascript">
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+
+</div>
+</body>
+</html>

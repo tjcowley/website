@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<link rel="icon" href="black logo.png">
+	<link rel="stylesheet" type="text/css" href="stylesheetforaboutpage.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
+</head>
+<body>
+<div id="topbar">
+	<img src="possible new welcome page2.jpg">
+</div>
+<div  id="header">
+  <ul>
+    <li>
+      
+       <a class="one" href="Shopping.html"> 
+      <img src="Shopping Cart Icon1.png" style="width: 30px; max-width: 100%; padding-top: 3.5%;"></a>
+      <a class="one"  href="Contactme.html"> 
+      <img src="Contact me Icon1.png" style="width: 30px; max-width: 100%; padding-top: 3.5%;"></a>
+    </li>
+    <li>
+      
+    </li>
+    <li>
+      <p>  </p>
+    </li>
+    <li>
+      <p>  </p>
+    </li>
+      <li>
+      <p>  </p>
+    </li>
+      <li>
+      <p>  </p>
+    </li>
+    <li>
+      <a class="one"  href="./Resume(2).pdf" target="_blank"> Resumé</a>
+    </li>
+    <li>
+      <a class="one"  href="Portfolio.html"> Portfolio</a>
+    </li>
+    <li>
+      <a class="one"  href="Aboutpage.html"> About Me </a>
+    </li>
+    <li>
+      <a class="one"  href="index.html"> <img src="Homeicon2.png" style="width: 30px; max-width: 100%; padding-top: 1%;"> </a>
+      <img src="Home icon.psd" id="homeicon">
+    </li>
+  </ul>
+</div>
+
+<div id="chalkboard">
+	<img src="5tcuzA.png">
+</div>
+
+<button class="accordion">Art</button>
+<div class="panel">
+  <p>I have always loved art.  Throughout my life I have constantly tried to improve upon my talents by devoting a lot of my free time to practicing, and I feel like the hard work has really paid off so far.  I have taken several art classes through the schools I have attended.  Freshmen year, I took a painting class.  Many of my works from this class are in my portfolio section. This year I am taking AP 2D Studio Art which covers a much broader array of skills in hopes of submitting an art portfolio to the college board at the end of the year.</p>
+  <a class="two" href="Portfolio.html">Please take some time and check out my portfolio!</a>
+</div>
+<button class="accordion">Church</button>
+<div class="panel">
+  <p>I am a member of the Church of Jesus Christ of Latter Day Saints (LDS) or more commonly reffered to as 'Mormon.'  I attend many religious activities throughout the week, including attending Sunday School, Early Morning Seminary every day, and Wednesday night activities with many of the girls my age.  I have found that attending these religious activities has given me not only a community that shares my standards and beliefs, but also a sense of purpose in my life.</p>
+</div>
+
+<button class="accordion">Family</button>
+<div class="panel">
+  <p>
+  	My family is very important to me.  From left to right depicted are my younger brother, Wyatt, my mom, Katie, my dad, Sam, me, and my older brother, Cyrus.  We also have a Cairn Terrier named Kody who is widely accepted as everyone's favorite family member.  We go on many family adventures- some better than others, but all memorable!  
+  </p>
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img class="slideshow" src="familynonblurry.png" style="width:100%">
+    <div class="text">My family</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img class="imageslideshow" src="kody.png" style="width:100%">
+    <div class="text">Our dog, Kody</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+
+ <script type="text/javascript">
+ 	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+ </script>
+</div>
+</div>
+
+<button class="accordion">Hobbies</button>
+<div class="panel">
+	<p>
+		
+	</p>
+</div>
+
+<button class="accordion">School</button>
+<div class="panel">
+	<p>
+		
+	</p>
+</div>
+
+<button class="accordion">Work</button>
+<div class="panel">
+	<p>
+		
+	</p>
+</div>
+
+
+
+<script type="text/javascript">
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+</body>
+</html>
