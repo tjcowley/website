@@ -1,0 +1,37 @@
+READ THIS IF YOU ARE CONFUSUSED OR HAVE NO IDEA WHAT YOU ARE DOING
+
+
+
+TO PUSH CHANGES TO THE WEBSITE
+
+1. go to the directory website_final
+2. make all the changes you want to push
+3. type the following in terminal from within the website_final folder ::   git commit -a -m "some text about what this change was"
+4. type the following in terminal from within the website_final folder ::   git push
+5. changes should be live
+
+
+
+TO SEE GOOGLE ANALYTICS (info on who and how many are seeing the site)
+
+1. go to analytics.google.com
+
+
+
+TO DO DOMAIN NAME STUFF
+
+1. go to https://ap.www.namecheap.com/dashboard
+
+
+
+TO DO COOL OTHER STUFF LIKE SSL
+
+1. go to https://www.cloudflare.com/a/overview/tessacowley.com
+
+
+
+TO MAKE WEBSITE BETTER
+
+1. compress all photos and make them smaller
+2. do some page speed stuff
+3. make it look good in mobile
