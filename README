@@ -7,7 +7,7 @@ TO PUSH CHANGES TO THE WEBSITE
 1. go to the directory website_final
 2. make all the changes you want to push
 3. open terminal
-4. type the following in terminal ::   
+4. type the following in terminal ::   cd /Users/tessacowley/Desktop/website_final
 3. type the following in terminal ::   git commit -a -m "some text about what this change was"
 4. type the following in terminal ::   git push
 5. changes should be live
