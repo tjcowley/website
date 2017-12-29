@@ -218,5 +218,10 @@ a:hover{
   border-color: gray;
   border-radius: 4px;
     box-shadow: 5px 5px 10px gray;
+}
 
+#Tessacowley{
+  margin-top: .5%;
+  margin-bottom: .5%;
+  font-weight:900;
 }
